@@ -19,14 +19,17 @@ y_txt = Entry(window, width = 20)
 y_txt.place(x = 70, y = 100)
 
 # 계산 버튼
-xy_button = ttk.Button(window, text='결과')
+xy_button = ttk.Button(window, text='결과', command = btnClick)
 xy_button.place(x = 120, y = 150)
 
 # 결과
-#res_lbl = Label(window, text = "결과 :")
-#res_lbl.place(x = 50, y = 200)
-#res_txt = Entry(window, width = 30)
+res_lbl = Label(window, text = "결과 :")
+res_lbl.place(x = 50, y = 200)
+res_txt = Label(window, width = 30, text= )
 
+def btnClick():
+  result = int(x_txt.get) + int(y_txt.get) #x+y값을 result에 저장
+  return result
 
 
 window.mainloop()
