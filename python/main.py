@@ -25,6 +25,7 @@ def func(event):
   res.insert(0, result) #결과 엔트리에 값 대입
 
 
+
 # 계산 버튼
 btn = ttk.Button(window, text='결과')
 btn.place(x = 120, y = 150) #결과 버튼 배치
