@@ -3,14 +3,19 @@ from tkinter import *
 from tkinter import ttk
 
 window = tk.Tk()
-window.title("x, y 함수") #제목
-window.geometry("340x340") #가로 * 세로 사이즈
+window.title("정화통 사용시간 예측 프로그램") #제목
+window.geometry("400x500") #가로 * 세로 사이즈
 
-# x
+# title
+title = Label(window, text = "정화통 사용시간 예측 프로그램 Ver 0.1", font=('Apple Gothic', 20))
+title.place(y = 20)
+title.pack()
+
 x_lbl = Label(window, text = "x :")
 x_lbl.place(x = 50, y = 50) #x라벨 배치
 x = Entry(window, width = 20)
-x.place(x = 70, y = 50) #x엔트리 배치
+#x.place(x = 70, y = 50) #x엔트리 배치
+x.pack()
 
 # y
 y_lbl = Label(window, text = "y :")
