@@ -4,7 +4,8 @@ from tkinter import *
 from tkinter.ttk import *
 import tkinter.font as tkFont
 
-class MyFrame(Frame):
+
+class subPage(Frame):
     def __init__(self, master):
         Frame.__init__(self, master)
 
@@ -104,8 +105,8 @@ class MyFrame(Frame):
 def main():
     root = Tk()
     root.geometry("380x400+100+100")
-    app = MyFrame(root)
-    root.mainloop()
+    app = subPage(root)
+    app.mainloop()
 
 if __name__ == '__main__':
     main()
