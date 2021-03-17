@@ -94,7 +94,7 @@ class PageOne(Frame):
         lblCategory.pack(side=LEFT, fill=X, padx=20, pady=10)
 
         # 정화통 종류 콤보박스
-        values = ["직결식 소형"]
+        values = ["CHERRY-203 저농도 복합용"]
         comboCategory = tkinter.ttk.Combobox(frame1, values = values)
         comboCategory.pack(fill=X, padx = 20 , expand=True)
 
@@ -106,7 +106,7 @@ class PageOne(Frame):
         lblGas.pack(side=LEFT, fill=X, padx=20, pady=10)
 
         # 가스 종류 콤보박스
-        values1 = ["cyclohexane"]
+        values1 = ["cyclohexane(C6H12)"]
         comboGas = tkinter.ttk.Combobox(frame2, values = values1)
         comboGas.pack(side = LEFT, fill=X, padx = 20 , expand=True)
 
